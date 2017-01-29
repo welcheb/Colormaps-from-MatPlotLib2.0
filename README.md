@@ -9,7 +9,7 @@ The default MatPlotLib colormap was changed to the newly created VIRIDIS, replac
 
 For the colormaps INFERNO, MAGMA, PLASMA, and VIRIDIS: interpolation occurs within the Lab colorspace: users who do not wish to bother with Lab interpolation can easily edit the Mfiles and interpolate in RGB.
 
-For the colormaps VEGA10, VEGA20, VEGA20b, and VEGA20c: the colormap values are repeated for colormaps larger than the number of defining colors.
+For the colormaps VEGA10, VEGA20, VEGA20B, and VEGA20C: the colormap values are repeated for colormaps larger than the number of defining colors.
 
 ### COLORMAP Examples ###
 
