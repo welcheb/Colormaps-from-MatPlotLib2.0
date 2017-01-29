@@ -11,7 +11,7 @@ function map = vega10(N)
 % <https://github.com/vega/vega/wiki/Scales#scale-range-literals>
 % Note that VEGA10 is the new default Line Color Order for MatPlotLib 2.0.
 %
-% Information on the axes ColorOrder (note that this is NOT the COLORMAP):
+% Information on the axes ColorOrder (note that this is NOT the axes COLORMAP):
 % <https://www.mathworks.com/help/matlab/creating_plots/defining-the-color-of-lines-for-plotting.html>
 % <https://www.mathworks.com/help/matlab/graphics_transition/why-are-plot-lines-different-colors.html>
 %
