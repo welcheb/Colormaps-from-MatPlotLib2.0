@@ -32,10 +32,10 @@ function lab = liRGB2Lab(rgb,M,wpt) % Nx3 <- Nx3
 %
 %applycform(rgb,makecform('srgb2lab','AdaptedWhitePoint',wpt))
 %
-% RGB -> XYZ:
+% RGB2XYZ:
 xyz = (M \ liGammaInv(rgb.')).';
 % Remember to include my license when copying my implementation.
-% XYZ to Lab:
+% XYZ2Lab:
 xyz = bsxfun(@rdivide,xyz,wpt);
 idx = xyz>(6/29)^3;
 F = idx.*(xyz.^(1/3)) + ~idx.*(xyz*(29/6)^2/3+4/29);
@@ -49,14 +49,14 @@ function rgb = liLab2RGB(lab,M,wpt) % Nx3 <- Nx3
 %
 %applycform(lab,makecform('lab2srgb','AdaptedWhitePoint',wpt))
 %
-% Lab -> XYZ
+% Lab2XYZ
 tmp = bsxfun(@rdivide,lab(:,[2,1,3]),[500,Inf,-200]);
 tmp = bsxfun(@plus,tmp,(lab(:,1)+16)/116);
 idx = tmp>(6/29);
 tmp = idx.*(tmp.^3) + ~idx.*(3*(6/29)^2*(tmp-4/29));
 xyz = bsxfun(@times,tmp,wpt);
 % Remember to include my license when copying my implementation.
-% XYZ -> RGB
+% XYZ2RGB
 rgb = max(0,min(1, liGammaCor(xyz * M.')));
 %
 end
