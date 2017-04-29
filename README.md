@@ -1,11 +1,11 @@
 Colormaps from MatPlotLib 2.0
 =========
 
-The MatPlotLib 2.0 default colormaps ported to MATLAB. This submission also includes the Line Color Order colormaps!
+The MatPlotLib 2.0 default colormaps ported to MATLAB. This submission also includes the Line ColorOrder colormaps!
 
 For version 2.0 of MatPlotLib new perceptually uniform colormaps were generated in the CAM02-UCS colorspace. The process is described here: 
 <http://matplotlib.org/2.0.0rc2/users/dflt_style_changes.html>
-The default MatPlotLib colormap was changed to the newly created VIRIDIS, replacing the rather awful JET/RAINBOW. The default Line Color Order was also changed to VEGA10.
+The default MatPlotLib colormap was changed to the newly created VIRIDIS, replacing the rather awful JET/RAINBOW. The default Line ColorOrder was also changed to VEGA10.
 
 For the colormaps INFERNO, MAGMA, PLASMA, and VIRIDIS: interpolation occurs within the Lab colorspace: users who do not wish to bother with Lab interpolation can easily edit the Mfiles and interpolate in RGB.
 

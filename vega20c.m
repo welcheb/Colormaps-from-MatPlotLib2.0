@@ -56,6 +56,7 @@ if nargin<1
 	N = size(get(gcf,'colormap'),1);
 else
 	assert(isscalar(N)&&isreal(N),'First argument must be a real numeric scalar.')
+	assert(fix(N)==N&&N>=0,'First argument must be a positive integer.')
 end
 %
 raw = [...
