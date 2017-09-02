@@ -52,9 +52,3 @@ For the colormaps VEGA10, VEGA20, VEGA20B, and VEGA20C: the colormap values are 
     X = linspace(0,pi*3,1000);
     Y = bsxfun(@(x,n)n*cos(x+2*n*pi/N), X(:), 1:N);
     line(X(:),Y)
-
-### Note ###
-
-The following files are part of GitHub/git repository, and are not required for using this submission in MATLAB:
-* .gitattributes
-* README.md
